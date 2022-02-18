@@ -1,0 +1,298 @@
+body{
+    font-family: "Rubik";
+    background-color: #05121A;
+    position: center;
+    background-image: url("../image/v3-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#TopPart{
+    height: 110vh;
+    min-height: 450px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    ". nav nav ."
+    "textArea textArea pic pic"
+    "textArea textArea pic pic"
+    "textArea textArea pic pic"
+    ;
+}
+
+#nav{
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav p:hover{
+    color: #86EBD9;
+}
+
+#textArea{
+    grid-area: textArea;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-bottom: 10%;
+}
+
+#pic{
+    grid-area: pic;
+    display: flex;
+    justify-self: end;
+    padding-bottom: 5%;
+}
+
+.myButton{
+    padding: 16px 16px;
+    width: 120px;
+    height: 80px;
+    border: none;
+    background: url("../image/button1.png") no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.myButton:hover{
+    background: url("../image/button2.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#navBar1{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navBar2{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navBar1 p{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#navBar2 p{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+h1{
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 10px;
+}
+
+h2{
+    margin-top: 0;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.bold{
+    margin-top: 0;
+    font-weight: bold;
+}
+.myColor{
+    color: #86EBD9;
+}
+
+.changeSize{
+    font-size: 40px;
+}
+
+#secPart{
+    height: 100vh;
+    min-height: 450px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    ". heading heading ."
+    ". card1 card1 ."
+    ". card2 card2 ."
+    "footer footer footer footer"
+    ;
+}
+
+#heading{
+    grid-area: heading;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#cPic{
+    display: flex;
+    width: 40%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#cText{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: flex-start;
+    padding: 52px;
+    background: url("../image/kuang.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+#cText p{
+    margin-bottom: 0;
+    color: #ffffff;
+}
+.myPic{
+    width:180px;
+    height:180px;
+}
+#card1{
+    grid-area: card1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#card2{
+    grid-area: card2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mb{
+    margin-bottom: 16px;
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 110vh;
+    z-index: 10;
+    background:url("../image/bg2.png") no-repeat ;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.loader img {
+    animation: myAn 4s ease;
+    transition: all ; 
+    width: 300px;
+    margin: 0 auto;
+}
+
+#footer{
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#left{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#right{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@keyframes myAn {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(360deg) scale(1.5);
+    }
+    100% {
+      transform: rotate(720deg) scale(2);
+    }
+  }
+
+
+@media only screen and (max-width: 1200px) {
+    #navBar1 {
+      display: none;
+    }
+    #navBar2 {
+        display: none;
+    }
+    #pic{
+        display: none;
+    }
+
+    #TopPart{
+        grid-template-areas: 
+        ". nav nav ."
+        ". textArea textArea ."
+        ". textArea textArea ."
+        ". textArea textArea ."
+        ;
+    }
+    body{
+        background-image: url("../image/Bg_black_web.jpg");
+    }
+    #textArea{
+        padding: 0;
+        align-self:start;
+    }
+
+    h1{
+        font-size: 30px;
+        line-height: normal;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+  }

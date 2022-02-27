@@ -1,0 +1,101 @@
+body{
+    font-family: "Rubik";
+    color:#fff;
+    background-color: #05121A;
+    background-image: url("../images/v3-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav a:hover {
+    color: #86EBD9 !important;
+}
+
+.hMune{
+    display: none;
+}
+
+.hMune img{
+    height: 70px;
+    width: 70px;
+}
+
+.changeColor{
+    color: #86EBD9 !important;
+}
+
+.changeSize{
+    font-size: 40px;
+}
+
+.myButton{
+    padding: 12px 36px;
+    border: none;
+    background: url("../images/buttonD.png") no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.bold{
+    font-weight: 700;
+}
+.myButton:hover{
+    background: url("../images/buttonH.png") no-repeat;
+    background-size: 100% 100%;
+    color: #040F62;
+}
+
+h1{
+    white-space: nowrap;
+}
+
+h2{
+    white-space: nowrap;
+}
+
+.cardBg{
+    padding: 80px;
+    background: url("../images/kuang.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+  
+@media only screen and (max-width: 767px) {
+    .nav{
+        display: none;
+    }
+
+    .hMune{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .downAorrow{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+}

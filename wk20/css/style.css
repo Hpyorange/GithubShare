@@ -37,6 +37,10 @@ body{
     text-align: center;
 }
 
+.no-warp{
+    white-space: nowrap;
+}
+
 .bold{
     font-weight: 700;
 }
@@ -48,6 +52,18 @@ body{
 
 h1{
     white-space: nowrap;
+}
+
+.name{
+    outline: none;
+    --c:#86EBD9;
+    /* 发光效果 */
+    text-shadow: 0 0 10px var(--c),
+    0 0 20px var(--c),
+    0 0 40px var(--c),
+    0 0 80px var(--c);
+
+    animation: animate 5s linear infinite;
 }
 
 h2{
@@ -98,4 +114,10 @@ h2{
         font-size: 24px;
     }
 
+}
+
+@keyframes animate{
+    to{
+        filter:hue-rotate(360deg);
+    }
 }

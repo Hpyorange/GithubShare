@@ -1,0 +1,95 @@
+body{
+    font-family: "Rubik";
+    color:#fff;
+    background-color: #05121A;
+    background-image: url("../images/contacMebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav a:hover {
+    color: #86EBD9 !important;
+}
+
+.hMune{
+    display: none;
+}
+
+.hMune img{
+    height: 70px;
+    width: 70px;
+}
+
+.changeColor{
+    color: #86EBD9 !important;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+.no-warp{
+    white-space: nowrap;
+}
+
+.myButton{
+    padding: 12px 36px;
+    border: none;
+    background: url("../images/buttonD.png") no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    text-align: center;
+    margin-left:45%;
+}
+
+.myButton:hover{
+    background: url("../images/buttonH.png") no-repeat;
+    background-size: 100% 100%;
+    color: #040F62;
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textb{
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+textarea{
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.space{
+    margin-top: 15%;
+}

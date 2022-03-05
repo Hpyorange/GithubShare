@@ -1,0 +1,35 @@
+body{
+    font-family: "Rubik";
+    color:#fff;
+    background-color: #05121A;
+    background: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.nav a:hover {
+    color: #86EBD9 !important;
+}
+
+.hMune{
+    display: none;
+}
+
+.hMune img{
+    height: 70px;
+    width: 70px;
+}
+
+.changeColor{
+    color: #86EBD9 !important;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+.no-warp{
+    white-space: nowrap;
+}
+

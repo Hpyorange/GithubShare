@@ -18,3 +18,33 @@ body{
     height: 40px;
     width: 40px;
 }
+
+.holder{
+    width: 500px;
+    height: 400px;
+}
+
+.holder-r{
+    height: 300px;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.space{
+    margin-top: 8%;
+}
+
+.changeColor{
+    color: #86EBD9 !important;
+}
